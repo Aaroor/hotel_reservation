@@ -1,0 +1,45 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    background: white;
+}
+
+@page {
+    /*size: A4;*/
+    margin: 0;
+}
+@media print {
+    html {
+        border-left-style: dashed;
+        /*border-top-style: dashed;*/
+        /*border-bottom-style: dashed;*/
+        border-right-style: dashed;
+        border-right-color:#004444;
+        border-left-color:#004444;
+        /*border-top-color:#004444;*/
+        /*border-bottom-color:#004444;*/
+        border-right-width: 6px;
+        border-left-width: 6px;
+        /*border-top-width: 6px;*/
+        border-bottom-width: 6px;
+        margin-left: 5px;
+        margin-right: 5px;
+        /*margin-top: 5px;*/
+        /*margin-bottom: 5px;*/
+        /*width: 210mm;*/
+        /*height: 297mm;*/
+    }
+    .page {
+        margin: 0;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+    }
+}

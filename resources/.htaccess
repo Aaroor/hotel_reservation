@@ -1,0 +1,4 @@
+AuthName "cookies"
+AuthUserFile "/home/nellymarine/.htpasswds/public_html/system/hotel_reservation/resources/passwd"
+AuthType Basic
+require valid-user

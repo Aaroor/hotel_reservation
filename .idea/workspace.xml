@@ -1,0 +1,1090 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8b1c1eac-c68b-4fe5-aa66-c81126ca5e75" name="Default" comment="" />
+    <ignored path="hotel_reservation.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_TOOLBAR" value="true" />
+    <option name="FLATTEN" value="false" />
+    <option name="GROUP_BY_TYPE" value="true" />
+    <option name="SORT_CHILDREN" value="false" />
+    <option name="SHOW_TABLE_CONSTRAINTS" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="hotel_reservation" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="checkOutPayment.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/receptionist/checkOutPayment.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.923077" vertical-offset="4230" max-vertical-offset="19550">
+              <caret line="264" column="56" selection-start-line="264" selection-start-column="56" selection-end-line="264" selection-end-column="114" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createCustomer.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/receptionist/createCustomer.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.653846" vertical-offset="4149" max-vertical-offset="9554">
+              <caret line="268" column="59" selection-start-line="268" selection-start-column="59" selection-end-line="268" selection-end-column="78" />
+              <folding>
+                <marker date="1517969487401" expanded="true" signature="21346:21549" placeholder="..." />
+                <marker date="1517969487401" expanded="true" signature="21347:21548" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customerList.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/receptionist/customerList.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.3461537" vertical-offset="4255" max-vertical-offset="16473">
+              <caret line="260" column="57" selection-start-line="260" selection-start-column="57" selection-end-line="260" selection-end-column="116" />
+              <folding>
+                <marker date="1517969487259" expanded="true" signature="52552:53977" placeholder="..." />
+                <marker date="1517969487259" expanded="true" signature="52807:53898" placeholder="..." />
+                <marker date="1517969487259" expanded="true" signature="52871:52971" placeholder="..." />
+                <marker date="1517969487259" expanded="true" signature="53049:53150" placeholder="..." />
+                <marker date="1517969487259" expanded="true" signature="53207:53306" placeholder="..." />
+                <marker date="1517969487259" expanded="true" signature="53385:53485" placeholder="..." />
+                <marker date="1517969487259" expanded="true" signature="53576:53674" placeholder="..." />
+                <marker date="1517969487259" expanded="true" signature="53775:53871" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editCustomer.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/receptionist/editCustomer.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.269231" vertical-offset="4254" max-vertical-offset="9537">
+              <caret line="269" column="59" selection-start-line="269" selection-start-column="59" selection-end-line="269" selection-end-column="78" />
+              <folding>
+                <marker date="1517969487414" expanded="true" signature="21162:21365" placeholder="..." />
+                <marker date="1517969487414" expanded="true" signature="21163:21364" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="orderList.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/receptionist/orderList.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.653846" vertical-offset="4117" max-vertical-offset="16779">
+              <caret line="260" column="57" selection-start-line="260" selection-start-column="57" selection-end-line="260" selection-end-column="116" />
+              <folding>
+                <marker date="1517969548291" expanded="true" signature="54110:55535" placeholder="..." />
+                <marker date="1517969548291" expanded="true" signature="54365:55456" placeholder="..." />
+                <marker date="1517969548291" expanded="true" signature="54429:54529" placeholder="..." />
+                <marker date="1517969548291" expanded="true" signature="54607:54708" placeholder="..." />
+                <marker date="1517969548291" expanded="true" signature="54765:54864" placeholder="..." />
+                <marker date="1517969548291" expanded="true" signature="54943:55043" placeholder="..." />
+                <marker date="1517969548291" expanded="true" signature="55134:55232" placeholder="..." />
+                <marker date="1517969548291" expanded="true" signature="55333:55429" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="orderMeals.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/receptionist/orderMeals.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.076923" vertical-offset="4184" max-vertical-offset="10676">
+              <caret line="260" column="56" selection-start-line="260" selection-start-column="56" selection-end-line="260" selection-end-column="114" />
+              <folding>
+                <marker date="1517969622108" expanded="true" signature="18087:18295" placeholder="..." />
+                <marker date="1517969622108" expanded="true" signature="18088:18294" placeholder="..." />
+                <marker date="1517969622108" expanded="true" signature="25883:26093" placeholder="..." />
+                <marker date="1517969622108" expanded="true" signature="25884:26092" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="previewPayment.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/receptionist/previewPayment.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6015326" vertical-offset="4089" max-vertical-offset="9384">
+              <caret line="259" column="114" selection-start-line="259" selection-start-column="114" selection-end-line="259" selection-end-column="114" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="billPayment.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/receptionist/billPayment.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.423077" vertical-offset="4184" max-vertical-offset="15181">
+              <caret line="259" column="57" selection-start-line="259" selection-start-column="57" selection-end-line="259" selection-end-column="116" />
+              <folding>
+                <marker date="1517969487246" expanded="true" signature="22188:22387" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="check_availability.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/receptionist/check_availability.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="147.73077" vertical-offset="4079" max-vertical-offset="10421">
+              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="113" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bookingList.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/receptionist/bookingList.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-159.23077" vertical-offset="4360" max-vertical-offset="20247">
+              <caret line="500" column="43" selection-start-line="500" selection-start-column="43" selection-end-line="502" selection-end-column="256" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="true" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/resources/views/manager/createReceptionist.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/manager/editReceptionist.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/manager/addCustomer.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/manager/airBookingList.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/manager/airPortBooking.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/manager/booking_payment.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/manager/bookingDetails.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/manager/bookingList.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/manager/check_availability.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/manager/createCustomer.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/manager/customerList.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/manager/editCustomer.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/manager/orderList.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/manager/previewPayment.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/manager/receptionistList.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/super_admin/checkOutPayment.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/receptionist/printTemp.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/manager/billPayment.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/manager/orderMeals.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ManagerController.php" />
+        <option value="$PROJECT_DIR$/resources/views/manager/printTemp.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/manager/checkOutPayment.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ReceptionistController.php" />
+        <option value="$PROJECT_DIR$/resources/views/receptionist/checkOutPayment.blade.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/public/js/page_notifications.js" />
+        <option value="$PROJECT_DIR$/public/phpFolder/airBookingNotification.php" />
+        <option value="$PROJECT_DIR$/public/phpFolder/browserNotify.php" />
+        <option value="$PROJECT_DIR$/public/phpFolder/mealsBookingNotification.php" />
+        <option value="$PROJECT_DIR$/public/phpFolder/roomsBookingNotification.php" />
+        <option value="$PROJECT_DIR$/public/phpFolder/todayNotification.php" />
+        <option value="$PROJECT_DIR$/js/page_notifications.js" />
+        <option value="$PROJECT_DIR$/phpFolder/airBookingNotification.php" />
+        <option value="$PROJECT_DIR$/phpFolder/browserNotify.php" />
+        <option value="$PROJECT_DIR$/phpFolder/mealsBookingNotification.php" />
+        <option value="$PROJECT_DIR$/phpFolder/roomsBookingNotification.php" />
+        <option value="$PROJECT_DIR$/phpFolder/todayNotification.php" />
+        <option value="$PROJECT_DIR$/resources/views/receptionist/addCustomer.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/receptionist/airBookingList.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/receptionist/airPortBooking.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/receptionist/allBookingList.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/receptionist/billPayment.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/receptionist/bookingDetails.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/receptionist/createCustomer.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/receptionist/customerList.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/receptionist/editCustomer.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/receptionist/orderList.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/receptionist/orderMeals.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/receptionist/previewPayment.blade.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsGulpfileManager">
+    <gulpfiles>
+      <GulpfileState>
+        <gulpfile-path>$PROJECT_DIR$/gulpfile.js</gulpfile-path>
+      </GulpfileState>
+    </gulpfiles>
+    <initial>false</initial>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel_reservation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel_reservation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel_reservation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel_reservation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel_reservation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel_reservation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel_reservation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="super_admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel_reservation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel_reservation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel_reservation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel_reservation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="receptionist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel_reservation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel_reservation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel_reservation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel_reservation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel_reservation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel_reservation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel_reservation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel_reservation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phpFolder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel_reservation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel_reservation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../medicheks_web" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="false" />
+    <property name="options.lastSelected" value="editor.preferences.appearance" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\hotel_reservation\resources\views\manager" />
+      <recent name="C:\wamp64\www\hotel_reservation\resources\views\super_admin" />
+      <recent name="C:\wamp64\www\hotel_reservation\public\fonts" />
+      <recent name="C:\wamp64\www\hotel_reservation\public\phpFolder" />
+      <recent name="C:\wamp64\www\hotel_reservation\public\demo\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\hotel_reservation\public\demo\img" />
+      <recent name="C:\wamp64\www\hotel_reservation\resources\views" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <pass-parent-env-vars>false</pass-parent-env-vars>
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8b1c1eac-c68b-4fe5-aa66-c81126ca5e75" name="Default" comment="" />
+      <created>1514104643027</created>
+      <option name="number" value="Default" />
+      <updated>1514104643027</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="0" width="1382" height="744" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33169934" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27912253" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/resources/views/manager/editCustomer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.7777777" vertical-offset="5267" max-vertical-offset="9707">
+          <caret line="325" column="33" selection-start-line="325" selection-start-column="33" selection-end-line="325" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/manager/editReceptionist.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.8076923" vertical-offset="6378" max-vertical-offset="9588">
+          <caret line="381" column="89" selection-start-line="381" selection-start-column="71" selection-end-line="381" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/manager/orderList.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.7777777" vertical-offset="5233" max-vertical-offset="16932">
+          <caret line="323" column="28" selection-start-line="323" selection-start-column="28" selection-end-line="323" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/manager/previewPayment.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75" vertical-offset="5352" max-vertical-offset="12988">
+          <caret line="330" column="31" selection-start-line="330" selection-start-column="31" selection-end-line="330" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/manager/managerHome.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7645349" vertical-offset="4769" max-vertical-offset="9758">
+          <caret line="296" column="59" selection-start-line="296" selection-start-column="59" selection-end-line="296" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/manager/receptionistList.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34593022" vertical-offset="4233" max-vertical-offset="16796">
+          <caret line="256" column="63" selection-start-line="256" selection-start-column="63" selection-end-line="256" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/MealsInfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.8461537" vertical-offset="102" max-vertical-offset="510">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/OrderPayment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.153846" vertical-offset="51" max-vertical-offset="510">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/CheckOutPayment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.6923075" vertical-offset="72" max-vertical-offset="493">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/manager/billPayment.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.769231" vertical-offset="10892" max-vertical-offset="14433">
+          <caret line="648" column="82" selection-start-line="648" selection-start-column="82" selection-end-line="648" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/manager/orderMeals.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.115385" vertical-offset="10430" max-vertical-offset="10863">
+          <caret line="629" column="17" selection-start-line="629" selection-start-column="17" selection-end-line="629" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ManagerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.351852" vertical-offset="35040" max-vertical-offset="35462">
+          <caret line="2093" column="5" selection-start-line="2093" selection-start-column="5" selection-end-line="2093" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/manager/printTemp.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1480" max-vertical-offset="4964">
+          <caret line="95" column="74" selection-start-line="95" selection-start-column="74" selection-end-line="95" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/super_admin/checkOutPayment.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="7509" max-vertical-offset="10880">
+          <caret line="626" column="71" selection-start-line="626" selection-start-column="71" selection-end-line="626" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/manager/checkOutPayment.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="14331" max-vertical-offset="14654">
+          <caret line="848" column="0" selection-start-line="848" selection-start-column="0" selection-end-line="848" selection-end-column="0" />
+          <folding>
+            <marker date="1517838760263" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517838760263" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517838760263" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517838760263" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517838760263" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517838760263" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517838760263" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517838760263" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54375" vertical-offset="676" max-vertical-offset="4437">
+          <caret line="59" column="87" selection-start-line="59" selection-start-column="58" selection-end-line="59" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SuperAdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1994382" vertical-offset="31260" max-vertical-offset="34221">
+          <caret line="1859" column="8" selection-start-line="1859" selection-start-column="8" selection-end-line="1860" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ReceptionistController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41690964" vertical-offset="38294" max-vertical-offset="40647">
+          <caret line="2279" column="63" selection-start-line="2279" selection-start-column="63" selection-end-line="2279" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/receptionist/printTemp.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5" vertical-offset="1533" max-vertical-offset="4964">
+          <caret line="94" column="36" selection-start-line="94" selection-start-column="36" selection-end-line="94" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="986">
+          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.384615" vertical-offset="3222" max-vertical-offset="3757">
+          <caret line="210" column="59" selection-start-line="210" selection-start-column="59" selection-end-line="210" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/phpFolder/airBookingNotification.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-29.423077" vertical-offset="0" max-vertical-offset="1241">
+          <caret line="45" column="88" selection-start-line="45" selection-start-column="88" selection-end-line="45" selection-end-column="88" />
+          <folding>
+            <marker date="1517968549468" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..air_port_booking_info..." />
+            <marker date="1517968549468" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517968549468" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/phpFolder/browserNotify.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-28.115385" vertical-offset="0" max-vertical-offset="1190">
+          <caret line="43" column="88" selection-start-line="43" selection-start-column="88" selection-end-line="43" selection-end-column="88" />
+          <folding>
+            <marker date="1517968549449" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..trigger_load..." />
+            <marker date="1517968549449" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1517968549449" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517968549449" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/phpFolder/mealsBookingNotification.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6538463" vertical-offset="696" max-vertical-offset="1241">
+          <caret line="45" column="88" selection-start-line="45" selection-start-column="88" selection-end-line="45" selection-end-column="88" />
+          <folding>
+            <marker date="1517968549508" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..order_info..." />
+            <marker date="1517968549508" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517968549508" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517968549508" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..meals_info..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/phpFolder/roomsBookingNotification.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0" vertical-offset="713" max-vertical-offset="1258">
+          <caret line="45" column="88" selection-start-line="45" selection-start-column="88" selection-end-line="45" selection-end-column="88" />
+          <folding>
+            <marker date="1517968549489" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..booking_info..." />
+            <marker date="1517968549489" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517968549489" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517968549489" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..rooms_info..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/phpFolder/themeChange.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.12724014" vertical-offset="71" max-vertical-offset="629">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1517640747411" expanded="true" signature="-1:-1" placeholder="UPDATE user_..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/phpFolder/todayNotification.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.7431192" vertical-offset="0" max-vertical-offset="2737">
+          <caret line="120" column="88" selection-start-line="120" selection-start-column="88" selection-end-line="120" selection-end-column="88" />
+          <folding>
+            <marker date="1517968549429" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..air_port_booking_info..." />
+            <marker date="1517968549429" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..order_info..." />
+            <marker date="1517968549429" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..booking_info..." />
+            <marker date="1517968549429" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517968549429" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517968549429" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..rooms_info..." />
+            <marker date="1517968549429" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..meals_info..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/page_notifications.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3152" max-vertical-offset="3723">
+          <caret line="208" column="41" selection-start-line="208" selection-start-column="41" selection-end-line="208" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/page_notifications.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-125.28571" vertical-offset="28" max-vertical-offset="3723">
+          <caret line="208" column="59" selection-start-line="208" selection-start-column="59" selection-end-line="208" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpFolder/airBookingNotification.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-29.423077" vertical-offset="0" max-vertical-offset="1241">
+          <caret line="45" column="88" selection-start-line="45" selection-start-column="88" selection-end-line="45" selection-end-column="88" />
+          <folding>
+            <marker date="1517968819497" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..air_port_booking_info..." />
+            <marker date="1517968819497" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517968819497" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpFolder/browserNotify.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-28.115385" vertical-offset="0" max-vertical-offset="1190">
+          <caret line="43" column="88" selection-start-line="43" selection-start-column="88" selection-end-line="43" selection-end-column="88" />
+          <folding>
+            <marker date="1517968819509" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..trigger_load..." />
+            <marker date="1517968819509" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1517968819509" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517968819509" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpFolder/mealsBookingNotification.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-29.423077" vertical-offset="0" max-vertical-offset="1241">
+          <caret line="45" column="88" selection-start-line="45" selection-start-column="88" selection-end-line="45" selection-end-column="88" />
+          <folding>
+            <marker date="1517968819479" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..order_info..." />
+            <marker date="1517968819479" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517968819479" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517968819479" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..meals_info..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpFolder/roomsBookingNotification.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-29.423077" vertical-offset="0" max-vertical-offset="1258">
+          <caret line="45" column="88" selection-start-line="45" selection-start-column="88" selection-end-line="45" selection-end-column="88" />
+          <folding>
+            <marker date="1517968819460" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..booking_info..." />
+            <marker date="1517968819460" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517968819460" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517968819460" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..rooms_info..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpFolder/themeChange.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.5" vertical-offset="117" max-vertical-offset="629">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1517640747411" expanded="true" signature="-1:-1" placeholder="UPDATE user_..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpFolder/todayNotification.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25137615" vertical-offset="2192" max-vertical-offset="2737">
+          <caret line="137" column="1" selection-start-line="137" selection-start-column="1" selection-end-line="137" selection-end-column="1" />
+          <folding>
+            <marker date="1517968819436" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..air_port_booking_info..." />
+            <marker date="1517968819436" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..order_info..." />
+            <marker date="1517968819436" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..booking_info..." />
+            <marker date="1517968819436" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517968819436" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517968819436" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..rooms_info..." />
+            <marker date="1517968819436" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..meals_info..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/receptionist/addCustomer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.423077" vertical-offset="4242" max-vertical-offset="9486">
+          <caret line="267" column="78" selection-start-line="267" selection-start-column="78" selection-end-line="267" selection-end-column="78" />
+          <folding>
+            <marker date="1517969487385" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517969487385" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/receptionist/airBookingList.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.538462" vertical-offset="4109" max-vertical-offset="10693">
+          <caret line="267" column="25" selection-start-line="267" selection-start-column="25" selection-end-line="267" selection-end-column="25" />
+          <folding>
+            <marker date="1517969487310" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517969487310" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517969487310" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517969487310" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517969487310" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517969487310" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517969487310" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517969487310" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/receptionist/airPortBooking.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.807692" vertical-offset="4102" max-vertical-offset="10676">
+          <caret line="267" column="27" selection-start-line="267" selection-start-column="27" selection-end-line="267" selection-end-column="27" />
+          <folding>
+            <marker date="1517969487330" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517969487330" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517969487330" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517969487330" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/receptionist/receptionistHome.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.076923" vertical-offset="4280" max-vertical-offset="9129">
+          <caret line="258" column="56" selection-start-line="258" selection-start-column="56" selection-end-line="258" selection-end-column="114" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/receptionist/allBookingList.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.115385" vertical-offset="4438" max-vertical-offset="18479">
+          <caret line="275" column="59" selection-start-line="275" selection-start-column="59" selection-end-line="275" selection-end-column="78" />
+          <folding>
+            <marker date="1517969487140" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517969487140" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517969487140" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517969487140" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517969487140" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517969487140" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517969487140" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517969487140" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517969487140" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1517969487140" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/receptionist/bookingDetails.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.576923" vertical-offset="4249" max-vertical-offset="10574">
+          <caret line="260" column="116" selection-start-line="260" selection-start-column="116" selection-end-line="260" selection-end-column="116" />
+          <folding>
+            <marker date="1517969487296" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/receptionist/billPayment.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.423077" vertical-offset="4184" max-vertical-offset="15181">
+          <caret line="259" column="57" selection-start-line="259" selection-start-column="57" selection-end-line="259" selection-end-column="116" />
+          <folding>
+            <marker date="1517969487246" expanded="true" signature="22188:22387" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/receptionist/bookingList.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-159.23077" vertical-offset="4360" max-vertical-offset="20247">
+          <caret line="500" column="43" selection-start-line="500" selection-start-column="43" selection-end-line="502" selection-end-column="256" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/receptionist/check_availability.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="147.73077" vertical-offset="4079" max-vertical-offset="10421">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="113" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/receptionist/checkOutPayment.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.923077" vertical-offset="4230" max-vertical-offset="19550">
+          <caret line="264" column="56" selection-start-line="264" selection-start-column="56" selection-end-line="264" selection-end-column="114" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/receptionist/createCustomer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.653846" vertical-offset="4149" max-vertical-offset="9554">
+          <caret line="268" column="59" selection-start-line="268" selection-start-column="59" selection-end-line="268" selection-end-column="78" />
+          <folding>
+            <marker date="1517969487401" expanded="true" signature="21346:21549" placeholder="..." />
+            <marker date="1517969487401" expanded="true" signature="21347:21548" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/receptionist/customerList.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.3461537" vertical-offset="4255" max-vertical-offset="16473">
+          <caret line="260" column="57" selection-start-line="260" selection-start-column="57" selection-end-line="260" selection-end-column="116" />
+          <folding>
+            <marker date="1517969487259" expanded="true" signature="52552:53977" placeholder="..." />
+            <marker date="1517969487259" expanded="true" signature="52807:53898" placeholder="..." />
+            <marker date="1517969487259" expanded="true" signature="52871:52971" placeholder="..." />
+            <marker date="1517969487259" expanded="true" signature="53049:53150" placeholder="..." />
+            <marker date="1517969487259" expanded="true" signature="53207:53306" placeholder="..." />
+            <marker date="1517969487259" expanded="true" signature="53385:53485" placeholder="..." />
+            <marker date="1517969487259" expanded="true" signature="53576:53674" placeholder="..." />
+            <marker date="1517969487259" expanded="true" signature="53775:53871" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/receptionist/editCustomer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.269231" vertical-offset="4254" max-vertical-offset="9537">
+          <caret line="269" column="59" selection-start-line="269" selection-start-column="59" selection-end-line="269" selection-end-column="78" />
+          <folding>
+            <marker date="1517969487414" expanded="true" signature="21162:21365" placeholder="..." />
+            <marker date="1517969487414" expanded="true" signature="21163:21364" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/receptionist/orderList.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.653846" vertical-offset="4117" max-vertical-offset="16779">
+          <caret line="260" column="57" selection-start-line="260" selection-start-column="57" selection-end-line="260" selection-end-column="116" />
+          <folding>
+            <marker date="1517969548291" expanded="true" signature="54110:55535" placeholder="..." />
+            <marker date="1517969548291" expanded="true" signature="54365:55456" placeholder="..." />
+            <marker date="1517969548291" expanded="true" signature="54429:54529" placeholder="..." />
+            <marker date="1517969548291" expanded="true" signature="54607:54708" placeholder="..." />
+            <marker date="1517969548291" expanded="true" signature="54765:54864" placeholder="..." />
+            <marker date="1517969548291" expanded="true" signature="54943:55043" placeholder="..." />
+            <marker date="1517969548291" expanded="true" signature="55134:55232" placeholder="..." />
+            <marker date="1517969548291" expanded="true" signature="55333:55429" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/receptionist/orderMeals.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.076923" vertical-offset="4184" max-vertical-offset="10676">
+          <caret line="260" column="56" selection-start-line="260" selection-start-column="56" selection-end-line="260" selection-end-column="114" />
+          <folding>
+            <marker date="1517969622108" expanded="true" signature="18087:18295" placeholder="..." />
+            <marker date="1517969622108" expanded="true" signature="18088:18294" placeholder="..." />
+            <marker date="1517969622108" expanded="true" signature="25883:26093" placeholder="..." />
+            <marker date="1517969622108" expanded="true" signature="25884:26092" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/receptionist/previewPayment.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6015326" vertical-offset="4089" max-vertical-offset="9384">
+          <caret line="259" column="114" selection-start-line="259" selection-start-column="114" selection-end-line="259" selection-end-column="114" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+
