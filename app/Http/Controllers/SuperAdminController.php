@@ -8395,7 +8395,10 @@ class SuperAdminController extends Controller
         if(count($availableRoom)==0)
             return 0;
         else{
+            if($availableRoom->check_out_status==0)
             return $availableRoom->status;
+            else
+            return 5;
         }
 
     }

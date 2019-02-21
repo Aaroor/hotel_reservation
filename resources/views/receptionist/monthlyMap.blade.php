@@ -427,14 +427,15 @@
 												  </a>-->
 <button style="background-color:purple" class="btn btn-light btn--icon-text" data-toggle="modal" data-target="#modal-xl{{$mo_id}}">{{$i}}</button>
 &nbsp
-												  @elseif($val>=2)
+												  @elseif($val==2)
 											     <!-- <a style="background-color:red" data-toggle="popover" data-placement="bottom" href="#" class="btn btn-light btn--icon-text" href=""><b>{{$i}}</b>							  
 												  </a>-->
 												  <button style="background-color:red" class="btn btn-light btn--icon-text" data-toggle="modal" data-target="#modal-xl{{$mo_id}}">{{$i}}</button>
 												  &nbsp
-											
+												  @elseif($val1==3)
+												  <button style="background-color:#ff6600" class="btn btn-light btn--icon-text" data-toggle="modal" data-target="#modal-xlst{{$mo_id2}}">{{$i}}</button>
+												  &nbsp
 												  @endif
-										
 												 @endfor									 
 											</td>
 										</tr>

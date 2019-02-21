@@ -443,6 +443,19 @@
 
                                     </div>
                                 </div>
+                                @if($is_available->checkAvailable($from_date,$to_date,$roomInfo->room_id)==5)
+                                <div class="col-sm-4 col-md-2">
+                                    <div class="stats__item" style="background-color: purple">
+                                        <div class="stats__chart" style="text-align: center;">
+                                            {{--<i class="zmdi zmdi-hotel"></i>--}}
+                                            <h4>{{$roomInfo->room_number}}</h4>
+                                            <h6>{{$dec_room_type->getRoomType($roomInfo->room_type)}}</h6>
+                                            <button class="btn btn-info" data-toggle="modal" data-target="#modal-xl{{$roomInfo->room_id}}"><i data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Booking History" style="font-size: 18px" class="zmdi zmdi-info-outline" ></i> </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
                                @else
                                 <div class="col-sm-4 col-md-2">
                                     <div class="stats__item" style="background-color: red">
@@ -583,7 +596,7 @@
                                                 <td><span style="background-color:green;padding:5px">Confirmed<span></td>
                                                 <td>
                                                     <a style="background-color:#ff6600" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Change Booking Confirm Status" href="{{route('res_not_confirm_booking', ['id'=>$bookingInfo->booking_id])}}" class="btn btn-light btn--icon-text" ><i class="zmdi zmdi-check"></i></a>
-                                                    
+
                                                 </td>
                                                 @endif
                                             </tr>
