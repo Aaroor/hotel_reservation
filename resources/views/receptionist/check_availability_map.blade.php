@@ -713,7 +713,6 @@
                                                     <a data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Make Orders For Meals" href="#" class="btn btn-light btn--icon-text" href=""><i class="zmdi zmdi-cutlery"></i></a>
                                                     <a data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Make Booking For Airport Pick Up/Drop" href="#" class="btn btn-light btn--icon-text" href=""><i class="zmdi zmdi-car-taxi"></i></a>
                                                     <a data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Add another booking for invoice" href="#" class="btn btn-light btn--icon-text" ><i class="zmdi zmdi-hotel"></i></a>
-                                                    <a style="background-color:#ff6600" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Change Booking Confirm Status" href="#" class="btn btn-light btn--icon-text" ><i class="zmdi zmdi-check"></i></a>
 
                                                 </td>
                                             @endif
