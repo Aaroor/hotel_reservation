@@ -574,16 +574,18 @@
                                                 <td>{{$bookingInfo->invoice_id}}</td>
                                                 <td>{{$bookingInfo->from_date}}</td>
                                                 <td>{{$bookingInfo->to_date}}</td>
+                                                @if($bookingInfo->status==3)
                                                 <td><span style="background-color:green;padding:5px">Not confirmed yet<span></td>
                                                 <td><a style="background-color:green" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Confirm to booking" href="{{route('res_confirm_booking', ['id'=>$bookingInfo->booking_id])}}" class="btn btn-light btn--icon-text" href=""><i class="zmdi zmdi-check"></i></a>&nbsp
                                                     <a style="background-color:red" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Remove Booking" href="{{route('res_remove_not_confirm_booking', ['id'=>$bookingInfo->booking_id])}}"  class="btn btn-light btn--icon-text"><i class="zmdi zmdi-delete"></i></a>
-                                                    <!-- <button style="background-color:red" class="btn btn-light btn--icon-text" data-toggle="modal" data-target="#modal-booking-remove{{$bookingInfo->invoice_id}}"><i data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Booking History"  class="zmdi zmdi-delete" ></i> </button> -->
-
-                                                    <!--<a data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Go to booking list" href="{{route('res_direct_to_booking_list', ['id'=>$bookingInfo->booking_id])}}" class="btn btn-light btn--icon-text" href=""><i class="zmdi zmdi-format-list-bulleted"></i></a>
-                                                    <a data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Make Orders For Meals" href="{{route('res_re_meals_booking', ['id'=>$bookingInfo->booking_id])}}" class="btn btn-light btn--icon-text" href=""><i class="zmdi zmdi-cutlery"></i></a>
-                                                    <a data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Make Booking For Airport Pick Up/Drop" href="{{route('res_re_air_booking', ['id'=>$bookingInfo->booking_id])}}" class="btn btn-light btn--icon-text" href=""><i class="zmdi zmdi-car-taxi"></i></a>
-                                                    <a data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Add another booking for invoice" href="{{route('res_re_room_booking', ['id'=>$bookingInfo->booking_id])}}" class="btn btn-light btn--icon-text" ><i class="zmdi zmdi-hotel"></i></a> -->
                                                     </td>
+                                                @elseif($bookingInfo->status==2)
+                                                <td><span style="background-color:green;padding:5px">Confirmed<span></td>
+                                                <td>
+                                                    <a style="background-color:#ff6600" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Change Booking Confirm Status" href="{{route('res_not_confirm_booking', ['id'=>$bookingInfo->booking_id])}}" class="btn btn-light btn--icon-text" ><i class="zmdi zmdi-check"></i></a>
+                                                    
+                                                </td>
+                                                @endif
                                             </tr>
                                             @endforeach
                                          @endif
