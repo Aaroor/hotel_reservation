@@ -2370,6 +2370,10 @@ class ReceptionistController extends Controller
                 ])
                 ->get();
 
+                // foreach($checkOutInfos as $checkOutInfo)
+                // echo $checkOutInfo->invoice_id."<br>";
+                //INV0000005796
+
             return view('receptionist.checkOutPayment', compact('checkOutInfos'))->with(
                 [
                     'msg' => 0,
@@ -2556,7 +2560,6 @@ class ReceptionistController extends Controller
                     ['check_out_status', '=', 0]
                 ])
                 ->get();
-            //dd($checkOutInfos);
 
             return view('receptionist.paidPayment', compact('checkOutInfos'))->with(
                 [

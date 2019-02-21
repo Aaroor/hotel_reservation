@@ -405,7 +405,13 @@
                            <div class="row stats">
                              @foreach($roomInfos as $roomInfo)
                                @if($is_available->checkAvailableForFront($from_date,$to_date,$roomInfo->room_id)==0)
-
+                               <?php 
+                               date_default_timezone_set('Asia/Colombo');
+                               $date_time = date("Y-m-d");
+                               $curdate=strtotime($date_time);
+                               $mydate=strtotime($from_date);
+                               ?>
+                               @if($curdate<=$mydate)
                                 <div class="col-sm-4 col-md-2">
                                     <div class="stats__item" style="background-color: green">
                                         <div class="stats__chart" style="text-align: center;">
@@ -418,7 +424,22 @@
 
                                     </div>
                                 </div>
+                                @else
+                                <div class="col-sm-4 col-md-2">
+                                    <div class="stats__item" style="background-color: #0000FF">
+                                        <div class="stats__chart" style="text-align: center;">
+                                            {{--<i class="zmdi zmdi-hotel"></i>--}}
+
+                                            <h4>{{$roomInfo->room_number}}</h4>
+                                            <h6>{{$dec_room_type->getRoomType($roomInfo->room_type)}}</h6>
+                                            <button class="btn btn-info" data-toggle="modal"><i data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Booking History" style="font-size: 18px" class="zmdi zmdi-info-outline" ></i> </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                @endif
                                @elseif($is_available->checkAvailableForFront($from_date,$to_date,$roomInfo->room_id)==1)
+                               
                                 <div class="col-sm-4 col-md-2">
                                     <div class="stats__item" style="background-color: #800080">
                                         <div class="stats__chart" style="text-align: center;">
@@ -431,6 +452,8 @@
 
                                     </div>
                                 </div>
+                                
+                                
                                 @elseif($is_available->checkAvailableForFront($from_date,$to_date,$roomInfo->room_id)==3)
                                 <div class="col-sm-4 col-md-2">
                                     <div class="stats__item" style="background-color: #ff6600">
