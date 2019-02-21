@@ -443,7 +443,7 @@
 
                                     </div>
                                 </div>
-                                @if($is_available->checkAvailable($from_date,$to_date,$roomInfo->room_id)==5)
+                                @elseif($is_available->checkAvailable($from_date,$to_date,$roomInfo->room_id)==5)
                                 <div class="col-sm-4 col-md-2">
                                     <div class="stats__item" style="background-color: purple">
                                         <div class="stats__chart" style="text-align: center;">
