@@ -8395,12 +8395,27 @@ class SuperAdminController extends Controller
         if(count($availableRoom)==0)
             return 0;
         else{
+            return $availableRoom->status;
+        }
+
+    }
+
+    public function checkAvailableForFront($to,$from,$room_id){
+        $availableRoom=BookingInfo::
+        whereDate('from_date','<=',$to)
+          ->whereDate('to_date','>',$to)
+            ->where([
+                ['room_id', '=',$room_id]
+            ])
+            ->first();
+        if(count($availableRoom)==0)
+            return 0;
+        else{
             if($availableRoom->check_out_status==0)
             return $availableRoom->status;
             else
             return 5;
         }
-
     }
     public function checkAvailableVerifyToTo($from,$id){
        $verify=BookingInfo::

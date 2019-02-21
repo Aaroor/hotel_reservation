@@ -404,7 +404,7 @@
 
                            <div class="row stats">
                              @foreach($roomInfos as $roomInfo)
-                               @if($is_available->checkAvailable($from_date,$to_date,$roomInfo->room_id)==0)
+                               @if($is_available->checkAvailableForFront($from_date,$to_date,$roomInfo->room_id)==0)
 
                                 <div class="col-sm-4 col-md-2">
                                     <div class="stats__item" style="background-color: green">
@@ -418,7 +418,7 @@
 
                                     </div>
                                 </div>
-                               @elseif($is_available->checkAvailable($from_date,$to_date,$roomInfo->room_id)==1)
+                               @elseif($is_available->checkAvailableForFront($from_date,$to_date,$roomInfo->room_id)==1)
                                 <div class="col-sm-4 col-md-2">
                                     <div class="stats__item" style="background-color: #800080">
                                         <div class="stats__chart" style="text-align: center;">
@@ -431,7 +431,7 @@
 
                                     </div>
                                 </div>
-                                @elseif($is_available->checkAvailable($from_date,$to_date,$roomInfo->room_id)==3)
+                                @elseif($is_available->checkAvailableForFront($from_date,$to_date,$roomInfo->room_id)==3)
                                 <div class="col-sm-4 col-md-2">
                                     <div class="stats__item" style="background-color: #ff6600">
                                         <div class="stats__chart" style="text-align: center;">
@@ -443,18 +443,20 @@
 
                                     </div>
                                 </div>
-                                <!-- @elseif($is_available->checkAvailable($from_date,$to_date,$roomInfo->room_id)==5)
+
+                                @elseif($is_available->checkAvailableForFront($from_date,$to_date,$roomInfo->room_id)==5)
                                 <div class="col-sm-4 col-md-2">
                                     <div class="stats__item" style="background-color: purple">
                                         <div class="stats__chart" style="text-align: center;">
                                             {{--<i class="zmdi zmdi-hotel"></i>--}}
                                             <h4>{{$roomInfo->room_number}}</h4>
                                             <h6>{{$dec_room_type->getRoomType($roomInfo->room_type)}}</h6>
-                                            <button class="btn btn-info" data-toggle="modal" data-target="#modal-xl{{$roomInfo->room_id}}"><i data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Booking History" style="font-size: 18px" class="zmdi zmdi-info-outline" ></i> </button>
+                                            <button class="btn btn-info" data-toggle="modal" data-target="#modal-xl_check_out{{$roomInfo->room_id}}"><i data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Booking History" style="font-size: 18px" class="zmdi zmdi-info-outline" ></i> </button>
                                         </div>
 
                                     </div>
-                                </div> -->
+                                </div>
+                                
 
                                @else
                                 <div class="col-sm-4 col-md-2">
@@ -567,7 +569,6 @@
                                     		<th>#</th>
 
                                     		<th>Customer Name</th>
-                                    		<th>Invoice No</th>
                                     		<th>Check in date</th>
                                     		<th>Check out date</th>
                                             <th>Booking Status</th>
@@ -589,13 +590,13 @@
                                                 {{--<td>{{$bookingInfo->customer_id}}</td>--}}
                                                 @if($bookingInfo->customer_id!=null or $bookingInfo->customer_id!="")
 
-                                                <td>{{$customer_info->getCustomer($bookingInfo->customer_id)->cus_first_name}} {{$customer_info->getCustomer($bookingInfo->customer_id)->cus_last_name}}</td>
+                                                <td>{{$customer_info->getCustomer($bookingInfo->customer_id)->cus_first_name}} {{$customer_info->getCustomer($bookingInfo->customer_id)->cus_last_name}}<br>{{$bookingInfo->invoice_id}}</td>
                                                 @else
-                                                <td>NULL</td>
+                                                <td>NULL<br>{{$bookingInfo->invoice_id}}</td>
                                                 @endif
-                                                <td>{{$bookingInfo->invoice_id}}</td>
                                                 <td>{{$bookingInfo->from_date}}</td>
                                                 <td>{{$bookingInfo->to_date}}</td>
+                                            @if($bookingInfo->check_out_status==0)
                                                 @if($bookingInfo->status==3)
                                                 <td><span style="background-color:green;padding:5px">Not confirmed yet<span></td>
                                                 <td><a style="background-color:green" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Confirm to booking" href="{{route('res_confirm_booking', ['id'=>$bookingInfo->booking_id])}}" class="btn btn-light btn--icon-text" href=""><i class="zmdi zmdi-check"></i></a>&nbsp
@@ -614,9 +615,88 @@
 
                                                 </td>
                                                 @endif
+                                            @else
+                                            <td><span style="background-color:green;padding:5px">Check Out<span></td>
+                                                <td>
+                                                <a data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Direct To Payment" href="#" class="btn btn-light btn--icon-text" href=""><i class="zmdi zmdi-money"></i></a>&nbsp
+                                                    <a data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Check out payment" href="#" class="btn btn-light btn--icon-text" href=""><i class="zmdi zmdi-shopping-cart"></i></a>
+                                                    <a data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Go to booking list" href="#" class="btn btn-light btn--icon-text" href=""><i class="zmdi zmdi-format-list-bulleted"></i></a>
+                                                    <a data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Make Orders For Meals" href="#" class="btn btn-light btn--icon-text" href=""><i class="zmdi zmdi-cutlery"></i></a>
+                                                    <a data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Make Booking For Airport Pick Up/Drop" href="#" class="btn btn-light btn--icon-text" href=""><i class="zmdi zmdi-car-taxi"></i></a>
+                                                    <a data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Add another booking for invoice" href="#" class="btn btn-light btn--icon-text" ><i class="zmdi zmdi-hotel"></i></a>
+                                                    <a style="background-color:#ff6600" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Change Booking Confirm Status" href="#" class="btn btn-light btn--icon-text" ><i class="zmdi zmdi-check"></i></a>
+
+                                                </td>
+                                            @endif
                                             </tr>
                                             @endforeach
                                          @endif
+                                    	@endif
+
+                                    	</tbody>
+                                    </table>
+                                </div>
+                                <div class="modal-footer">
+
+                                    <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+
+
+                @foreach($roomInfos as $roomInfo)
+                    <div class="modal fade" id="modal-xl_check_out{{$roomInfo->room_id}}" tabindex="-1">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title pull-left">Booking History</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <table class="table mb-3">
+                                    	<thead  class="thead-default">
+                                    	<tr>
+                                    		<th>#</th>
+
+                                    		<th>Customer Name</th>
+                                    		<th>Check in date</th>
+                                    		<th>Check out date</th>
+                                            <th>Booking Status</th>
+                                    		<th>Action</th>
+                                    	</tr>
+                                    	</thead>
+                                    	<tbody>
+                                    	@inject('historyInfo', 'App\Http\Controllers\SuperAdminController')
+                                    	@inject('customer_info', 'App\Http\Controllers\SuperAdminController')
+
+
+                                    	@if(count($historyInfo->checkHistory($from_date,$to_date,$roomInfo->room_id))!=0)
+                                    	    <?php $row=0;$bookInfos=$historyInfo->checkHistory($from_date,$to_date,$roomInfo->room_id); ?>
+                                            @foreach($bookInfos as $bookingInfo)
+                                            <tr>
+                                                <th scope="row">{{$row=$row+1}}</th>
+                                                {{--<td>{{$bookingInfo->customer_id}}</td>--}}
+                                                @if($bookingInfo->customer_id!=null or $bookingInfo->customer_id!="")
+
+                                                <td>{{$customer_info->getCustomer($bookingInfo->customer_id)->cus_first_name}} {{$customer_info->getCustomer($bookingInfo->customer_id)->cus_last_name}}<br>{{$bookingInfo->invoice_id}}</td>
+                                                @else
+                                                <td>NULL<br>{{$bookingInfo->invoice_id}}</td>
+                                                @endif
+                                                <td>{{$bookingInfo->from_date}}</td>
+                                                <td>{{$bookingInfo->to_date}}</td>
+                                            
+                                            <td><span style="background-color:green;padding:5px">Check Out<span></td>
+                                                <td>
+                                                <a data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Direct To Payment" href="#" class="btn btn-light btn--icon-text" href=""><i class="zmdi zmdi-money"></i></a>&nbsp
+                                                    <a data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Check out payment" href="#" class="btn btn-light btn--icon-text" href=""><i class="zmdi zmdi-shopping-cart"></i></a>
+                                                    <a data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Go to booking list" href="#" class="btn btn-light btn--icon-text" href=""><i class="zmdi zmdi-format-list-bulleted"></i></a>
+                                                    <a data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Make Orders For Meals" href="#" class="btn btn-light btn--icon-text" href=""><i class="zmdi zmdi-cutlery"></i></a>
+                                                    <a data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Make Booking For Airport Pick Up/Drop" href="#" class="btn btn-light btn--icon-text" href=""><i class="zmdi zmdi-car-taxi"></i></a>
+                                                    <a data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Add another booking for invoice" href="#" class="btn btn-light btn--icon-text" ><i class="zmdi zmdi-hotel"></i></a>
+                                                </td>
+                                            </tr>
+                                            @endforeach
                                     	@endif
 
                                     	</tbody>
