@@ -2370,8 +2370,14 @@ class ReceptionistController extends Controller
                 ])
                 ->get();
 
-                // foreach($checkOutInfos as $checkOutInfo)
-                // echo $checkOutInfo->invoice_id."<br>";
+               // foreach(getBookingPay($checkOutInfo->invoice_id) as $roomsBooking)
+           // dd($checkOutInfos);
+                //  foreach($checkOutInfos as $checkOutInfo){
+                //  foreach($this->getBookingPay($checkOutInfo->invoice_id) as $roomsBooking){
+                //     echo $roomsBooking->booking_id."<br>";
+                //  }
+                // }
+                 //echo $checkOutInfo->invoice_id."<br>";
                 //INV0000005796
 
             return view('receptionist.checkOutPayment', compact('checkOutInfos'))->with(

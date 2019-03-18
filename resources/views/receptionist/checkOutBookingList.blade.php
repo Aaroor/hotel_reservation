@@ -291,7 +291,6 @@
                           <li class="@@colorsactive"><a href="{{route('res_monthly_map')}}">Monthly Time Line</a></li>
                           <li class="@@colorsactive"><a href="{{route('res_check_map')}}">Availability Map</a></li>
                           <li class="@@colorsactive"><a href="{{route('res_check_map_bulk')}}">Bulk Booking</a></li>
-                           <li class="@@colorsactive"><a href="{{route('rec_available_rooms_index')}}">Availability List</a></li>
                            @if($msg==5)
                            <li class="@@colorsactive"><a href="{{route('res_index_all_booking_list')}}">Booking List</a></li>
                            @else
@@ -322,9 +321,9 @@
                         	<a href=""><i class="zmdi zmdi-money-box zmdi-hc-fw"></i> Payment</a>
 
                         	<ul>
-                        		<li class="@@colorsactive"><a href="{{route('res_index_check_out_payment')}}">Payment Check Out</a></li>
+                        		<li class="@@colorsactive"><a href="{{route('res_index_check_out_payment')}}">Pending Payments</a></li>
                         		<li class="@@colorsactive"><a href="{{route('res_index_paid_payment')}}">Paid Payments</a></li>
-                        		<li class="@@colorsactive"><a href="{{route('res_check_out_info')}}">Final Check Outs</a></li>
+                        		<li class="@@colorsactive"><a href="{{route('res_check_out_info')}}">Check Outs</a></li>
                         	</ul>
                         </li>
                         <li class="navigation__sub @@uiactive">

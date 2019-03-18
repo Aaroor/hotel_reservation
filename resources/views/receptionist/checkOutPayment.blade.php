@@ -284,7 +284,6 @@
                           <li class="@@colorsactive"><a href="{{route('res_monthly_map')}}">Monthly Time Line</a></li>
                           <li class="@@colorsactive"><a href="{{route('res_check_map')}}">Availability Map</a></li>
                           <li class="@@colorsactive"><a href="{{route('res_check_map_bulk')}}">Bulk Booking</a></li>
-                          <li class="@@cssanimationsactive"><a href="{{route('rec_available_rooms_index')}}">Availability List</a></li>
                           <li class="@@cssanimationsactive"><a href="{{route('res_index_booking_list')}}">Booking List</a></li>
                           <li class="@@colorsactive"><a href="{{route('res_index_check_booking_list')}}">Check Out Bookings</a></li>
 
@@ -317,9 +316,9 @@
                            <a href=""><i class="zmdi zmdi-money-box zmdi-hc-fw"></i> Payment</a>
 
                            <ul>
-                               <li class="navigation__active"><a href="{{route('res_index_check_out_payment')}}">Payment Check Out</a></li>
+                               <li class="navigation__active"><a href="{{route('res_index_check_out_payment')}}">Pending Payments</a></li>
                                <li class="@@colorsactive"><a href="{{route('res_index_paid_payment')}}">Paid Payments</a></li>
-                               <li class="@@colorsactive"><a href="{{route('res_check_out_info')}}">Final Check Outs</a></li>
+                               <li class="@@colorsactive"><a href="{{route('res_check_out_info')}}">Check Outs</a></li>
 
                            </ul>
                        </li>
@@ -692,6 +691,7 @@
                                 <thead>
                                     <tr style="font-size: 16px;font-weight: bold">
                                         {{--<th><i>Customer Name</i></th>--}}
+                                   
                                         <th><i>Customer Name</i></th>
                                         <th><i>Booking Date</i></th>
                                         <th><i>Preview</i></th>
@@ -712,6 +712,7 @@
 
 
                                 	<tr style="font-size: 16px">
+                                    
 
                                 		<td>
                                 		  @if($cus_id->getCustomerId($checkOutInfo->invoice_id)!=null)
@@ -783,7 +784,11 @@
                 					@foreach($booking_pay->getBookingPay($checkOutInfo->invoice_id) as $roomsBooking)
                 					<tr>
                 						<th scope="row">{{$cont=$cont+1}}</th>
+                                        @if($book_info->getBookingInfo($roomsBooking->booking_id)!=null)
                 						<td>Room No : {{$room_info->getRoomDetails($book_info->getBookingInfo($roomsBooking->booking_id)->room_id)->room_number}}<br> Duration : ( {{$book_info->getBookingInfo($roomsBooking->booking_id)->from_date}} To {{$book_info->getBookingInfo($roomsBooking->booking_id)->to_date}})</td>
+                                        @else
+                                        <td></td>
+                                        @endif
                 						<?php $perAmount=($roomsBooking->total_amount)/$roomsBooking->no_of_days;?>
                 						<td>{{number_format((float)$perAmount,2,'.','')}}</td>
                 						<td>{{$roomsBooking->no_of_days}}</td>
@@ -795,7 +800,7 @@
 
                 					</tr>
                 					@endforeach
-
+                                    
                 					<?php $discount=$checkOut->getCheckOutInfo($invId)->discount_amount;?>
 
 

@@ -287,7 +287,6 @@
                            <li class="@@colorsactive"><a href="{{route('res_monthly_map')}}">Monthly Time Line</a></li>
                            <li class="@@colorsactive"><a href="{{route('res_check_map')}}">Availability Map</a></li>
                            <li class="@@colorsactive"><a href="{{route('res_check_map_bulk')}}">Bulk Booking</a></li>
-                           <li class="@@colorsactive"><a href="{{route('rec_available_rooms_index')}}">Availability List</a></li>
                            <li class="navigation__active"><a href="{{route('res_index_booking_list')}}">Booking List</a></li>
                           </ul>
                         </li>
