@@ -412,6 +412,7 @@
                                ?>
                                @if($curdate<=$mydate)
                                 <div class="col-sm-4 col-md-2">
+                                  @if(strcmp("#HALL",$roomInfo->room_number)!=0)
                                     <div class="stats__item" style="background-color: green">
                                         <div class="stats__chart" style="text-align: center;">
                                             {{--<i class="zmdi zmdi-hotel"></i>--}}
@@ -422,7 +423,21 @@
                                         </div>
 
                                     </div>
+                                  @else
+                                    <div class="stats__item" style="background-color: #ce1e6b">
+                                        <div class="stats__chart" style="text-align: center;">
+                                            {{--<i class="zmdi zmdi-hotel"></i>--}}
+
+                                            <h4><b>{{$roomInfo->room_number}}</b></h4>
+                                            <h6>Function Hall</h6>
+                                            <a href="{{route('res_index_booking_info', ['id'=>$roomInfo->room_id])}}" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="For Booking" class="btn btn-light btn--icon-text" ><i class="zmdi zmdi-arrow-forward"></i></a>
+                                        </div>
+
+                                    </div>
+                                  @endif
                                 </div>
+                                
+
                                 @else
                                 <div class="col-sm-4 col-md-2">
                                     <div class="stats__item" style="background-color: #0000FF">
@@ -430,7 +445,11 @@
                                             {{--<i class="zmdi zmdi-hotel"></i>--}}
 
                                             <h4>{{$roomInfo->room_number}}</h4>
+                                            @if(strcmp("#HALL",$roomInfo->room_number)!=0)
                                             <h6>{{$dec_room_type->getRoomType($roomInfo->room_type)}}</h6>
+                                            @else
+                                            <h6>Function Hall</h6>
+                                            @endif
                                             <button class="btn btn-info" data-toggle="modal"><i data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Booking History" style="font-size: 18px" class="zmdi zmdi-info-outline" ></i> </button>
                                         </div>
 
@@ -444,7 +463,11 @@
                                         <div class="stats__chart" style="text-align: center;">
                                             {{--<i class="zmdi zmdi-hotel"></i>--}}
                                             <h4>{{$roomInfo->room_number}}</h4>
+                                            @if(strcmp("#HALL",$roomInfo->room_number)!=0)
                                             <h6>{{$dec_room_type->getRoomType($roomInfo->room_type)}}</h6>
+                                            @else
+                                            <h6>Function Hall</h6>
+                                            @endif
                                             <a data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Booking Cancel" href="{{route('res_cancel_booking', ['id'=>$remove_id->getBookingIdTwo($from_date,$to_date,$roomInfo->room_id)])}}" class="btn btn-danger btn--icon-text" href=""><i class="zmdi zmdi-close"></i></a>
                                             {{--<a data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Continue Booking" href="{{route('res_con_booking_info', ['id'=>$roomInfo->room_id,'from'=>$from_date,'to'=>$to_date])}}" class="btn btn-success btn--icon-text" href=""><i class="zmdi zmdi-check"></i></a>--}}
                                         </div>
@@ -459,8 +482,13 @@
                                         <div class="stats__chart" style="text-align: center;">
                                             {{--<i class="zmdi zmdi-hotel"></i>--}}
                                             <h4>{{$roomInfo->room_number}}</h4>
+                                            @if(strcmp("#HALL",$roomInfo->room_number)!=0)
                                             <h6>{{$dec_room_type->getRoomType($roomInfo->room_type)}}</h6>
+                                            @else
+                                            <h6>Function Hall</h6>
+                                            @endif
                                             <button class="btn btn-info" data-toggle="modal" data-target="#modal-xlt{{$roomInfo->room_id}}"><i data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Booking History" style="font-size: 18px" class="zmdi zmdi-info-outline" ></i> </button>
+                                            
                                         </div>
 
                                     </div>
@@ -472,7 +500,11 @@
                                         <div class="stats__chart" style="text-align: center;">
                                             {{--<i class="zmdi zmdi-hotel"></i>--}}
                                             <h4>{{$roomInfo->room_number}}</h4>
+                                            @if(strcmp("#HALL",$roomInfo->room_number)!=0)
                                             <h6>{{$dec_room_type->getRoomType($roomInfo->room_type)}}</h6>
+                                            @else
+                                            <h6>Function Hall</h6>
+                                            @endif
                                             <button class="btn btn-info" data-toggle="modal" data-target="#modal-xl_check_out{{$roomInfo->room_id}}"><i data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Booking History" style="font-size: 18px" class="zmdi zmdi-info-outline" ></i> </button>
                                         </div>
 
@@ -523,6 +555,7 @@
                                     	<tbody>
                                     	@inject('historyInfo', 'App\Http\Controllers\SuperAdminController')
                                     	@inject('customer_info', 'App\Http\Controllers\SuperAdminController')
+                                        @inject('is_Empty', 'App\Http\Controllers\ReceptionistController')
 
 
                                     	@if(count($historyInfo->checkHistory($from_date,$to_date,$roomInfo->room_id))!=0)
@@ -556,7 +589,10 @@
                                                     <a data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Make Orders For Meals" href="{{route('res_re_meals_booking', ['id'=>$bookingInfo->booking_id])}}" class="btn btn-light btn--icon-text" href=""><i class="zmdi zmdi-cutlery"></i></a>
                                                     <a data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Make Booking For Airport Pick Up/Drop" href="{{route('res_re_air_booking', ['id'=>$bookingInfo->booking_id])}}" class="btn btn-light btn--icon-text" href=""><i class="zmdi zmdi-car-taxi"></i></a>
                                                     <a data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Add another booking for invoice" href="{{route('res_re_room_booking', ['id'=>$bookingInfo->booking_id])}}" class="btn btn-light btn--icon-text" ><i class="zmdi zmdi-hotel"></i></a>
+                                                    @if($is_Empty->isEmptyPaymentHistory($bookingInfo->invoice_id))
                                                     <a style="background-color:#ff6600" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Change Booking Confirm Status" href="{{route('res_not_confirm_booking', ['id'=>$bookingInfo->booking_id])}}" class="btn btn-light btn--icon-text" ><i class="zmdi zmdi-check"></i></a>
+                                                    @endif
+                                                    
                                                     </td>
                                                 @endif
                                             </tr>

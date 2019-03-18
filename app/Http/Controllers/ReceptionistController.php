@@ -6695,6 +6695,22 @@ class ReceptionistController extends Controller
         
         
     }
+
+    public function isEmptyPaymentHistory($id){
+        $payHistory=PaymentHistory::
+        where([
+            ['invoice_id', '=',$id]
+        ])
+        ->get();
+
+        if(count($payHistory)==0){
+            return true;
+        }
+        else{
+            return false;
+        }
+
+    }
     
     public function dayAvailability(){
        $room_id="R_5a87d97d4894a";
