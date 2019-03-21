@@ -273,7 +273,7 @@
                     	<li class="@@colorsactive"><a href="{{route('manager_home')}}"><i class="zmdi zmdi-home"></i> Home</a></li>
 
 
-                    	 <li class="navigation__sub @@uiactive">
+                    	 <!-- <li class="navigation__sub @@uiactive">
                     		<a href=""><i class="zmdi zmdi-hotel zmdi-hc-fw"></i> Rooms Booking</a>
 
                     		<ul>
@@ -284,8 +284,8 @@
                                 <li class="@@colorsactive"><a href="{{route('man_index_check_booking_list')}}">Check Out Bookings</a></li>
 
                     		</ul>
-                    	</li>
-                    	<li class="navigation__sub @@uiactive">
+                    	</li> -->
+                    	<!-- <li class="navigation__sub @@uiactive">
                     		<a href=""><i class="zmdi zmdi-cutlery zmdi-hc-fw"></i> Meals Order</a>
 
                     		<ul>
@@ -294,8 +294,8 @@
                     			<li class="@@colorsactivee"><a href="{{route('man_index_check_order_list')}}">Check Out Orders</a></li>
 
                     		</ul>
-                    	</li>
-                    	<li class="navigation__sub @@uiactive">
+                    	</li> -->
+                    	<!-- <li class="navigation__sub @@uiactive">
                     		 <a href=""><i class="zmdi zmdi-car-taxi zmdi-hc-fw"></i> Airport Booking</a>
 
 
@@ -307,8 +307,8 @@
 
 
                     		 </ul>
-                    	</li>
-                    	<li class="navigation__sub @@uiactive">
+                    	</li> -->
+                    	<!-- <li class="navigation__sub @@uiactive">
                     		<a href=""><i class="zmdi zmdi-money-box zmdi-hc-fw"></i> Payment</a>
 
                     		<ul>
@@ -316,14 +316,14 @@
                     			<li class="@@colorsactive"><a href="{{route('man_index_paid_payment')}}">Paid Payments</a></li>
                     			<li class="@@colorsactive"><a href="{{route('man_check_out_info')}}">Final Check Outs</a></li>
                     		</ul>
-                    	</li>
-                    	<li class="navigation__sub @@uiactive">
+                    	</li> -->
+                    	<!-- <li class="navigation__sub @@uiactive">
                     		<a href=""><i class="zmdi zmdi-time-restore zmdi-hc-fw"></i>Previous Histories</a>
 
                     		<ul>
                     			<li class="@@colorsactive"><a href="{{route('man_cus_booking_history')}}">Customer Histories</a></li>
                     		</ul>
-                    	</li>
+                    	</li> -->
                     	<li class="@@colorsactive">
                     	   <a href="{{route('man_meals_order_app')}}"><i class="zmdi zmdi-check-all zmdi-hc-fw"></i> Approval List</a>
 
@@ -339,7 +339,7 @@
                     		   <li class="navigation__active"><a href="{{route('man_cus_list')}}">Customer List</a></li>
                     	   </ul>
                     	</li>
-
+<!-- 
                     	<li class="navigation__sub @@uiactive">
                     	  <a href=""><i class="zmdi zmdi-accounts-alt"></i> Receptionist</a>
 
@@ -349,7 +349,7 @@
 
                     	  </ul>
 
-                    	</li>
+                    	</li> -->
 
                     	<li class="navigation__sub @@uiactive">
                     		<a href=""><i class="zmdi zmdi-airline-seat-flat zmdi-hc-fw"></i> Rooms Management</a>
@@ -372,7 +372,7 @@
                     	   </ul>
                     	</li>
 
-                    	<li class="navigation__sub @@uiactive">
+                    	<!-- <li class="navigation__sub @@uiactive">
                     		<a href=""><i class="zmdi zmdi-tv-list zmdi-hc-fw"></i> Reports</a>
 
 
@@ -381,7 +381,7 @@
                                <li class="@@colorsactive"><a href="{{route('man_rep_check_out')}}">Check Out Reports</a></li>
 
                     	   </ul>
-                    	</li>
+                    	</li> -->
 
 
 

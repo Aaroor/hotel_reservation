@@ -500,7 +500,9 @@
                                         @else
                                         <strong style="font-size: 12px">{{$bookingInfo->invoice_id}}</strong><br><strong style="font-size: 9px"></strong>
                                         @endif
+                                        @if($room_details->getRoomDetails($bookingInfo->room_id)!=null)
                                         <strong  style="font-size: 9px">{{$room_details->getRoomDetails($bookingInfo->room_id)->room_number}}</strong>
+                                        @endif
                                         </td>
 
                                         <td style="font-size: 14px">
@@ -547,7 +549,7 @@
                                            <td style="font-size: 14px"><strong><a data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Direct To Payment" href="{{route('res_bill_payment', ['id'=>$bookingInfo->invoice_id])}}" class="btn btn-light btn--icon-text" href=""><i class="zmdi zmdi-money"></i></a></strong></td>
                                            @endif
                                           @else
-                                                                              <td style="font-size: 14px"><strong><button data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Direct To Payment" class="btn btn-light btn--icon-text" disabled><i class="zmdi zmdi-money"></i></button></strong></td>
+                                            <td style="font-size: 14px"><strong><button data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Direct To Payment" class="btn btn-light btn--icon-text" disabled><i class="zmdi zmdi-money"></i></button></strong></td>
                                           @endif
                                           @else
                                             <td style="font-size: 14px"><strong><button data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Can not pay" class="btn btn-light btn--icon-text" disabled><i class="zmdi zmdi-money"></i></button></strong></td>
@@ -628,13 +630,17 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <label>Room Number</label>
+                                        @if($room_details->getRoomDetails($bookingInfo->room_id)!=null)
                                         <p>{{$room_details->getRoomDetails($bookingInfo->room_id)->room_number}}</p>
+                                        @endif
 
 
                                     </div>
                                     <div class="col-sm-6">
                                         <label>Floor Number</label>
+                                        @if($room_details->getRoomDetails($bookingInfo->room_id)!=null)
                                         <p>{{$room_details->getRoomDetails($bookingInfo->room_id)->floor_number}}</p>
+                                        @endif
 
 
 
@@ -680,7 +686,7 @@
 
 
                                 @if($bookingInfo->status==2)
-                                        <p>{{$cus_details->getCustomer($bookingInfo->customer_id)->cus_first_name}} {{$cus_details->getCustomer($bookingInfo->customer_id)->cus_last_name}}</p>
+                                    <p>{{$cus_details->getCustomer($bookingInfo->customer_id)->cus_first_name}} {{$cus_details->getCustomer($bookingInfo->customer_id)->cus_last_name}}</p>
                                 @else
                                     <p>Not Available</p>
                                 @endif

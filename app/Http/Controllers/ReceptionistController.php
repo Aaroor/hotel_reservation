@@ -1410,7 +1410,7 @@ class ReceptionistController extends Controller
                     ['check_out_status', '=', 0],
                 ])
                 ->get();
-          //  dd($bookingInfos);
+            //dd($bookingInfos);
 
             return view('receptionist.bookingList', compact('bookingInfos'))->with(
                 [
