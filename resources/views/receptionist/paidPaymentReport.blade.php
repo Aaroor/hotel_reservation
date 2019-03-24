@@ -281,9 +281,10 @@
                          <a href=""><i class="zmdi zmdi-hotel zmdi-hc-fw"></i> Rooms Booking</a>
 
                          <ul>
-                          <li class="@@colorsactive"><a href="{{route('res_monthly_map')}}">Monthly Time Line</a></li>
+<li class="@@colorsactive"><a href="{{route('res_monthly_map')}}">Monthly Time Line</a></li>
                           <li class="@@colorsactive"><a href="{{route('res_check_map')}}">Availability Map</a></li>
                           <li class="@@colorsactive"><a href="{{route('res_check_map_bulk')}}">Bulk Booking</a></li>
+                          <li class="@@cssanimationsactive"><a href="{{route('rec_available_rooms_index')}}">Availability List</a></li>
                           <li class="@@cssanimationsactive"><a href="{{route('res_index_booking_list')}}">Booking List</a></li>
                           <li class="@@colorsactive"><a href="{{route('res_index_check_booking_list')}}">Check Out Bookings</a></li>
 
@@ -308,6 +309,8 @@
                              <li class="@@cssanimationsactive"><a href="{{route('res_index_airport_booking')}}">Make Booking</a></li>
                              <li class="@@colorsactive"><a href="{{route('res_index_airport_booking_list')}}">Booking List</a></li>
                              <li class="@@colorsactive"><a href="{{route('res_index_check_airport_booking_list')}}">Check Out Air Bookings</a></li>
+
+
                             </ul>
                        </li>
                        <li class="navigation__sub @@uiactive">
@@ -315,29 +318,30 @@
 
                            <ul>
                                <li class="@@colorsactive"><a href="{{route('res_index_check_out_payment')}}">Pending Payments</a></li>
+                               {{-- <li class="@@colorsactive"><a href="{{route('res_rep_check_rooms')}}">Check Out Rooms</a></li> --}}
                                <li class="@@colorsactive"><a href="{{route('res_index_paid_payment')}}">Paid Payments</a></li>
-                               <li class="@@colorsactive"><a href="{{route('res_check_out_info')}}">Check Outs</a></li>
+                               <li class="@@colorsactive"><a href="{{route('res_check_out_info')}}">Final Check Outs</a></li>
 
                            </ul>
-					   </li>
-					   <li class="navigation__sub @@uiactive">
-						<a href=""><i class="zmdi zmdi-tv-list zmdi-hc-fw"></i> Reports</a>
-						<ul>
-						   <li class="@@colorsactive"><a href="{{route('res_rep_check_out')}}">Check Out Invoices</a></li>
-						   <li class="@@colorsactive"><a href="{{route('res_rep_check_rooms')}}">Check Out Rooms</a></li>
-						   <li class="@@colorsactive"><a href="{{route('res_rep_current_booking')}}">Current Booking</a></li>
-						   <li class="@@colorsactive"><a href="{{route('res_index_paid_payment_report')}}">Paid Booking</a></li>
-						   
-					   </ul>
-					</li>
+                       </li>
                        <li class="navigation__sub navigation__sub--active navigation__sub--toggled">
+                            <a href=""><i class="zmdi zmdi-tv-list zmdi-hc-fw"></i> Reports</a>
+                            <ul>
+                               <li class="@@colorsactive"><a href="{{route('res_rep_check_out')}}">Check Out Invoices</a></li>
+                               <li class="@@colorsactive"><a href="{{route('res_rep_check_rooms')}}">Check Out Rooms</a></li>
+                               <li class="@@colorsactive"><a href="{{route('res_rep_current_booking')}}">Current Booking</a></li>
+                               <li class="navigation__active"><a href="{{route('res_index_paid_payment_report')}}">Paid Booking</a></li>
+                               
+                               
+                           </ul>
+                        </li>
+                       <li class="navigation__sub @@uiactive">
                        	<a href=""><i class="zmdi zmdi-time-restore zmdi-hc-fw"></i>Previous Histories</a>
 
                        	<ul>
-                       		<li class="navigation__active"><a href="{{route('res_cus_booking_history')}}">Customer Histories</a></li>
+                       		<li class="@@colorsactive"><a href="{{route('res_cus_booking_history')}}">Customer Histories</a></li>
                        	</ul>
                        </li>
-
                        <li class="navigation__sub @@uiactive">
                          <a href=""><i class="zmdi zmdi-accounts-list-alt zmdi-hc-fw"></i> Customers</a>
 
@@ -354,6 +358,7 @@
                        	   <li class="@@colorsactive"><a href="{{route('res_cus_questions')}}">FAQ Questions</a></li>
                           </ul>
                        </li>
+
                        <li class="@@colorsactive">
                          <a href="{{route('logout')}}"><i class="zmdi zmdi-lock"></i> Log Out</a>
                        </li>
@@ -363,13 +368,99 @@
 
             <section class="content">
                 <header class="content__title">
+                    {{-- <a href="{{route('res_index_paid_payment')}}" class="btn btn-light btn--icon-text"><i class="zmdi zmdi-search"></i>All Search</a> --}}
+
+
 
                 </header>
                 
                 <div class="card">
                     <div class="card-body">
-                        <div class="table-responsive">
+                    <br><br>
+                        @if($msg==1)
+                            <div class="alert alert-success alert-dismissible fade show" style="font-size: 16px">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <strong>Successfully paid your amount </strong><br> Ready your bill to print
+                            </div>
+                        @elseif($msg==2)
+                            <div class="alert alert-success alert-dismissible fade show" style="font-size: 16px">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <strong>{{$cmt}}</strong><br> Successfully sent a request to manager approval
+                            </div>
+                        @endif
 
+
+
+                        <label class="custom-control custom-radio">
+
+                            <input type="radio" value="2" name="radio-inline" o class="custom-control-input" checked>
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description">Duration Search</span>
+                        </label>
+                        <br><br>
+                      
+
+                     
+                        <div  id="sec_deu">
+                        {{Form::open(['action'=>'ReceptionistController@recPaidDurationSearchReportP','class'=>'form-horizontal form-label-left input_mask','name'=>'edit_res_form', 'method'=>'POST','role'=>'form','onsubmit'=>'return editResFormValidation()'])}}
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <label>Start Date</label>
+
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="zmdi zmdi-calendar"></i></span>
+                                    <div class="form-group">
+                                    @if(session()->has('search_date_paid_from'))
+                                        <input  type="text" name="from_date" class="form-control date-picker" value="{{session('search_date_paid_from')}}">
+                                    @else
+                                        <input  type="text" name="from_date" class="form-control date-picker" value="Pick a date">
+                                    @endif
+                                        <i class="form-group__bar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <label>End Date</label>
+
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="zmdi zmdi-calendar"></i></span>
+                                    <div class="form-group">
+                                    @if(session()->has('search_date_paid_to'))
+                                        <input id="dt" type="text" name="to_date" class="form-control date-picker" value="{{session('search_date_paid_to')}}">
+                                    @else
+                                        <input id="dt" type="text" name="to_date" class="form-control date-picker" value="Pick a date">
+                                    @endif
+                                        <i class="form-group__bar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <label></label>
+                                <div class="input-group">
+                                    <div class="form-group">
+                                        <button id="btn_search" class="btn btn-light btn--icon-text"><i class="zmdi zmdi-search"></i> Search</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-3">
+                                    <a href="{{route('res_paid_report_show')}}" class="btn btn-success btn--icon-text"><i style="font-size: 18px" class="zmdi zmdi-print"></i> Print</a>
+                            </div>
+
+                        </div>
+                    {{Form::close()}}
+                    </div>
+                        
+
+
+
+
+
+                        <div class="table-responsive">
                          @inject('meals_details', 'App\Http\Controllers\SuperAdminController')
                          @inject('booking_details', 'App\Http\Controllers\SuperAdminController')
                          @inject('room_details', 'App\Http\Controllers\SuperAdminController')
@@ -381,32 +472,42 @@
                          @inject('con_date_time', 'App\Http\Controllers\ReceptionistController')
 
 
+
                             <table id="data-table" class="table">
                                 <thead>
-                                    <tr style="font-size: 16px;font-weight: bold">
+                                    <tr style="font-size: 14px;font-weight: bold">
+                                        {{--<th><i>Customer Name</i></th>--}}
                                         <th><i>Customer Name</i></th>
-                                        <th><i>Nic No / Passport</i></th>
-                                        <th><i>TP No</i></th>
-                                        <th><i>Preview</i></th>
-                                        <th><i>Invoice No</i></th>
+                                        <th><i>Booking Date</i></th>
+                                        <th><i>Total</i></th>
+                                        <th><i>Paid Amount</i></th>
+                                        <th><i>Outstanding</i></th>
+                                        <th><i>Check Out Status</i></th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                @if(count($checkOutInfos)!=0)
                                  @foreach($checkOutInfos as $checkOutInfo)
+                                 <?php
+                                  $out_pay1=0.0;
+                                  $total=0.0;
+                                  $out_pay1=($checkOutInfo->total_amount-$checkOutInfo->discount_amount)-$checkOutInfo->paid_amount;
+                                  $total=$checkOutInfo->total_amount-$checkOutInfo->discount_amount;
+                                  
+                                  ?>
+                                    	<tr style="font-size: 14px">
 
-                                	<tr style="font-size: 16px">
-                                		<td>
-                                		  {{$cus_info->getCustomer($cus_id->getCustomerId($checkOutInfo->invoice_id))->cus_first_name}} {{$cus_info->getCustomer($cus_id->getCustomerId($checkOutInfo->invoice_id))->cus_last_name}}
-                                		</td>
-                                		<td>{{$cus_info->getCustomer($cus_id->getCustomerId($checkOutInfo->invoice_id))->cus_nic_pass}}</td>
-                                		<td>{{$cus_info->getCustomer($cus_id->getCustomerId($checkOutInfo->invoice_id))->cus_phone}}</td>
-                                		<td><button class="btn btn-light" data-toggle="modal" data-target="#modal_xl{{$checkOutInfo->invoice_id}}"><i style="font-size: 18px" class="zmdi zmdi-google-pages"></i> Preview History</button></td>
-                                		<td>{{$checkOutInfo->invoice_id}}</td>
+                                                <td>
+                                                {{$cus_info->getCustomer($cus_id->getCustomerId($checkOutInfo->invoice_id))->cus_first_name}} {{$cus_info->getCustomer($cus_id->getCustomerId($checkOutInfo->invoice_id))->cus_last_name}}<br><span style="font-size: 14px">({{$checkOutInfo->invoice_id}})</span>
+                                                </td>
+                                                <td>{{$con_date_time->convertDate($checkOutInfo->add_date)}}</td>
+                                                <td>{{number_format((float)$total,2,'.','')}}</td>
+                                                <td>{{number_format((float)$checkOutInfo->paid_amount,2,'.','')}}</td>
+                                                <td>{{number_format((float)$out_pay1,2,'.','')}}</td>
+                                                <td>Still Not checkOut</td>
+                                            </tr>
 
-                                	</tr>
-                                 @endforeach
-                                @endif
+                                
+                                @endforeach
 
                                 </tbody>
                             </table>
@@ -414,7 +515,6 @@
                     </div>
                 </div>
 
-            @if(count($checkOutInfos)!=0)
                 @foreach($checkOutInfos as $checkOutInfo)
                 <div class="modal fade" id="modal_xl{{$checkOutInfo->invoice_id}}" tabindex="-1">
                 	<div class="modal-dialog modal-xl">
@@ -435,6 +535,7 @@
                                 @inject('air_pay', 'App\Http\Controllers\ReceptionistController')
                                 @inject('hsty_pay', 'App\Http\Controllers\ReceptionistController')
                                 @inject('checkOut', 'App\Http\Controllers\ReceptionistController')
+                                @inject('time_conversion', 'App\Http\Controllers\SuperAdminController')
 
                 				<table class="table mb-3">
                 					<thead  class="thead-default">
@@ -464,12 +565,14 @@
 
                 					</tr>
                 					@endforeach
-                                    <?php $discount=$checkOut->getCheckOutInfo($invId)->discount_amount;?>
+
+                					<?php $discount=$checkOut->getCheckOutInfo($invId)->discount_amount;?>
+
 
                 					@foreach($order_pay->getOrderPay($checkOutInfo->invoice_id) as $orderPayment)
                 					<tr>
                 						<th scope="row">{{$cont=$cont+1}}</th>
-                						<td>Meals Name : {{$meals_info->getMealsInfo($order_info->getOrderDetails($orderPayment->order_id)->meals_id)->meals_name}}<br>Order Date : {{$order_info->getOrderDetails($orderPayment->order_id)->order_date}} <br> Order Time : {{$order_info->getOrderDetails($orderPayment->order_id)->order_time}}</td>
+                						<td>@if($meals_info->getMealsInfo($order_info->getOrderDetails($orderPayment->order_id)->meals_id)->meals_type==4)Drinks Name : @else Meals Name : @endif{{$meals_info->getMealsInfo($order_info->getOrderDetails($orderPayment->order_id)->meals_id)->meals_name}}<br>Order Date : {{$order_info->getOrderDetails($orderPayment->order_id)->order_date}} @if($order_info->getOrderDetails($orderPayment->order_id)->order_time==null)@else<br> Order Time : {{$time_conversion->timeConversion($order_info->getOrderDetails($orderPayment->order_id)->order_time)}}@endif</td>
                 						<?php $perMAmount=($orderPayment->amount)/$orderPayment->quantity;?>
                 						<td>{{number_format((float)$perMAmount,2,'.','')}}</td>
                 						<td>{{$orderPayment->quantity}}</td>
@@ -538,10 +641,10 @@
                 						</thead>
 
                 					</tbody>
+
                 					<tbody>
                                          <thead>
                                             <tr style="font-size: 16px">
-
 
                                                 <th>#</th>
                                                 <th>Total Discount <?php $num=40-strlen(number_format((float)$discount,2,'.',''));?> </th>
@@ -553,6 +656,7 @@
                                         </thead>
 
                                     </tbody>
+
 
                 					<tbody>
                 						 <thead>
@@ -631,7 +735,76 @@
                 	</div>
                 </div>
                 @endforeach
-            @endif
+
+
+
+                @foreach($checkOutInfos as $checkOutInfo)
+                	<div class="modal fade" id="modal-default_bill_print{{$checkOutInfo->payment_id}}" tabindex="-1">
+                		<div class="modal-dialog">
+                			<div class="modal-content">
+                				<div class="modal-header">
+                					<h5 class="modal-title pull-left">Approval Request For Bill Printing</h5>
+                				</div>
+                				<div class="modal-body" style="font-size: 16px">
+                				<p style="font-size:12px"><i class="zmdi zmdi-info-outline"></i>&nbspYou can't print bill with out manager approval. Please make a request to manger for an approval</p>
+                					{{Form::open(['action'=>'ReceptionistController@resBillPrintsAppP','class'=>'form-horizontal form-label-left input_mask','name'=>'edit_res_form', 'method'=>'POST','role'=>'form'])}}
+                						 <input type="hidden" value="{{$checkOutInfo->invoice_id}}" name="inv_id"/>
+                							<div class="row">
+                								<div class="col-sm-12">
+
+                									<div class="form-group">
+                										<label style="font-size: 16px"><b><i class="zmdi zmdi-play-for-work"></i>&nbsp Reason for bill print again ?</b></label>
+                										<textarea class="form-control" name="print_reason" style="font-size: 16px"  rows="4" cols="50"  placeholder="Type here ..." required></textarea>
+
+                									</div>
+
+                								</div>
+                								<div class="col-sm-6">
+
+                								</div>
+
+                							</div>
+
+
+
+
+                						{{--Please make sure customer <strong>{{$roomInfo->room_number}}</strong> remove from the system. If you approve room number <strong>{{$roomInfo->room_number}}</strong> will <strong>permanently remove</strong> from the system.--}}
+                						</div>
+                						<div class="modal-footer">
+                						<button type="submit" class="btn btn-link">Submit</button>
+                						<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                						{{Form::close()}}
+                				</div>
+
+                			</div>
+                		</div>
+                	</div>
+                @endforeach
+
+                <div class="modal fade" id="modal-default_calc" tabindex="-1">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button style="color: white;float: right;
+                                                          font-size: 30px;
+                                                          font-weight: 700;
+                                                          line-height: 1;
+                                                          filter: alpha(opacity=20);
+                                                          opacity: .9;" type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body" style="font-size: 16px">
+                                <iframe src="https://system.nellymarine.com/common/calculator" height="600" width="100%" frameBorder="0">
+
+                                </iframe>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
 
                 <form>
                 	<input type="hidden" name="in_user_id" id="in_user_id" value="{{session('user_id')}}" />
@@ -735,6 +908,7 @@
 
           $(document).ready(function() {
             $(".btn-success").printPage();
+
           });
 
          </script>
@@ -756,6 +930,15 @@
 
 
 
+              }
+
+              function clickEv($val)
+              {
+                var id=$val;
+                var td_id="td"+$val;
+                var tdd_id="tdd"+$val;
+                document.getElementById(td_id).style.display="none";
+                document.getElementById(tdd_id).style.display="block";
               }
           </script>
 

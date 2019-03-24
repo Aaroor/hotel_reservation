@@ -314,6 +314,16 @@
                                 <li class="@@colorsactive"><a href="{{route('res_check_out_info')}}">Check Outs</a></li>
                             </ul>
                           </li>
+                          <li class="navigation__sub @@uiactive">
+                            <a href=""><i class="zmdi zmdi-tv-list zmdi-hc-fw"></i> Reports</a>
+                            <ul>
+                               <li class="@@colorsactive"><a href="{{route('res_rep_check_out')}}">Check Out Invoices</a></li>
+                               <li class="@@colorsactive"><a href="{{route('res_rep_check_rooms')}}">Check Out Rooms</a></li>
+                               <li class="@@colorsactive"><a href="{{route('res_rep_current_booking')}}">Current Booking</a></li>
+                               <li class="@@colorsactive"><a href="{{route('res_index_paid_payment_report')}}">Paid Booking</a></li>
+                               
+                           </ul>
+                        </li>
                          <li class="navigation__sub @@uiactive">
                          	<a href=""><i class="zmdi zmdi-time-restore zmdi-hc-fw"></i>Previous Histories</a>
 

@@ -32,6 +32,21 @@ Route::group(array('prefix' => 'common'), function () {
 });
 
 Route::group(array('prefix' => 'receptionist'), function () {
+    // start
+    Route::get('res_index_paid_payment_report', ['as' => 'res_index_paid_payment_report', 'uses' => 'ReceptionistController@resIndexPaidPaymentReport']);
+    Route::get('res_paid_search_report_date', ['as' => 'res_paid_search_report_date', 'uses' => 'ReceptionistController@recPaidDataSearchReport']);
+    Route::get('res_paid_search_duration_report', ['as' => 'res_paid_search_duration_report', 'uses' => 'ReceptionistController@recPaidDurationSearchReport']);
+    Route::get('res_paid_report_show', ['as' => 'res_paid_report_show', 'uses' => 'ReceptionistController@paidReportShow']);
+    // end
+    // Start
+    Route::get('res_rep_check_out', ['as' => 'res_rep_check_out', 'uses' => 'ReceptionistController@resReportCheckOut']);
+    Route::get('res_report_check_search_duration', ['as' => 'res_report_check_search_duration', 'uses' => 'ReceptionistController@resReportCheckDurationSearch']);
+    Route::get('res_rep_check_rooms', ['as' => 'res_rep_check_rooms', 'uses' => 'ReceptionistController@resReportCheckRooms']);
+    Route::get('res_report_check_rooms_search_duration', ['as' => 'res_report_check_rooms_search_duration', 'uses' => 'ReceptionistController@resReportCheckRoomsDurationSearch']);
+    Route::get('res_rep_current_booking', ['as' => 'res_rep_current_booking', 'uses' => 'ReceptionistController@resReportCurrentBooking']);
+    Route::get('res_report_current_booking_search_duration', ['as' => 'res_report_current_booking_search_duration', 'uses' => 'ReceptionistController@resReportCurrentBookingDurationSearch']);
+    // End
+
     Route::get('receptionist_home', ['as' => 'receptionist_home', 'uses' => 'ReceptionistController@indexHome']);
     Route::get('receptionist_home_first', ['as' => 'receptionist_home_first', 'uses' => 'ReceptionistController@indexHomeFirst']);
     Route::get('rec_available_rooms_index', ['as' => 'rec_available_rooms_index', 'uses' => 'ReceptionistController@availableRoomsIndex']);
@@ -189,6 +204,17 @@ Route::group(array('prefix' => 'receptionist'), function () {
     Route::post('res_edt_bookingP', ['as' => 'res_edt_bookingP', 'uses' => 'ReceptionistController@resEditBooking']);
     Route::post('res_bulk_temp_bookP', ['as' => 'res_bulk_temp_bookP', 'uses' => 'ReceptionistController@recBulkTempBooking']);
     Route::post('monthly_search_p', ['as' => 'monthly_search_p', 'uses' => 'ReceptionistController@monthlySearchP']);
+
+    // start
+    Route::post('res_report_check_out_durationP', ['as' => 'res_report_check_out_durationP', 'uses' => 'ReceptionistController@resReportCheckDurationSearchP']);
+    Route::post('res_report_check_rooms_durationP', ['as' => 'res_report_check_rooms_durationP', 'uses' => 'ReceptionistController@resReportCheckRoomsDurationSearchP']);
+    Route::post('res_report_current_booking_durationP', ['as' => 'res_report_current_booking_durationP', 'uses' => 'ReceptionistController@resReportCurrentBookingDurationSearchP']);
+    //end
+    
+     // start 2/28
+    Route::post('res_paid_date_report_P', ['as' => 'res_paid_date_report_P', 'uses' => 'ReceptionistController@recPaidSearchReportP']);
+    Route::post('res_paid_duration_report_P', ['as' => 'res_paid_duration_report_P', 'uses' => 'ReceptionistController@recPaidDurationSearchReportP']);
+    //end
 
 
 });

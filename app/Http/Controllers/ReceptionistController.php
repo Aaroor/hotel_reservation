@@ -102,6 +102,426 @@ class ReceptionistController extends Controller
     {
         //
     }
+
+     //Start
+     public function resIndexPaidPaymentReport()
+     {
+         if (session()->has('user_id')) {
+             $checkOutInfos = CheckOutPayment::
+             where([
+                     ['is_remove', '=', 0],
+                     ['status', '=', 1],
+                     ['check_out_status', '=', 0]
+                 ])
+                 ->get();
+ 
+             return view('receptionist.paidPaymentReport', compact('checkOutInfos'))->with(
+                 [
+                     'msg' => 0,
+                     'cmt' => 'init'
+                 ]
+             );
+         }
+         else {
+             session()->flush();
+             return redirect('/');
+         }
+     }
+ 
+     public function recPaidSearchReportP(Request $request)
+     {
+         if (session()->has('user_id')) {
+             $fromDate = $request->input('from_date');
+             if (session()->has('search_date_paid_from'))
+                 session()->put('search_date_paid_from', $fromDate);
+             else
+                 session(['search_date_paid_from' => $fromDate]);
+ 
+             return redirect('receptionist/res_paid_search_report_date');
+         }
+         else {
+             session()->flush();
+             return redirect('/');
+         }
+ 
+         // dd($fromDate);
+     }
+ 
+     public function recPaidDataSearchReport()
+     {
+ 
+         //  $date_val=DATE(session('search_date_from'));
+         if (session()->has('user_id')) {
+             $checkOutInfos = CheckOutPayment::
+             whereDate('add_date', '=', session('search_date_paid_from'))
+                 ->where([
+                     ['status', '=', 1],
+                 ])
+                 ->get();
+ 
+             return view('receptionist.paidPaymentReport', compact('checkOutInfos'))->with(
+                 [
+                     'msg' => 4,
+                     'cmt' => 'init'
+                 ]
+             );
+         }
+         else {
+             session()->flush();
+             return redirect('/');
+         }
+     }
+ 
+     public function recPaidDurationSearchReportP(Request $request)
+     {
+         if (session()->has('user_id')) {
+             $fromDate = $request->input('from_date');
+             $toDate = $request->input('to_date');
+             if (session()->has('search_date_paid_from')) {
+                 session()->put('search_date_paid_from', $fromDate);
+                 session()->put('search_date_paid_to', $toDate);
+ 
+             } else {
+                 session(['search_date_paid_from' => $fromDate]);
+                 session(['search_date_paid_to' => $toDate]);
+ 
+             }
+ 
+             return redirect('receptionist/res_paid_search_duration_report');
+         }
+         else {
+             session()->flush();
+             return redirect('/');
+         }
+     }
+ 
+     public function recPaidDurationSearchReport()
+     {
+         if (session()->has('user_id')) {
+             $checkOutInfos = CheckOutPayment::
+             whereDate('add_date', '>=', session('search_date_paid_from'))
+                 ->whereDate('add_date', '<=', session('search_date_paid_to'))
+                 ->where([
+                     ['status', '=', 1],
+                     ['check_out_status','=',0]
+                 ])
+                 ->get();
+ 
+             return view('receptionist.paidPaymentReport', compact('checkOutInfos'))->with(
+                 [
+                     'msg' => 5,
+                     'cmt' => 'init'
+                 ]
+             );
+         }
+         else {
+             session()->flush();
+             return redirect('/');
+         }
+     }
+ 
+     public function paidReportShow(){
+         if (session()->has('user_id')) {
+             $checkOutInfos = CheckOutPayment::
+             whereDate('add_date', '>=', session('search_date_paid_from'))
+                 ->whereDate('add_date', '<=', session('search_date_paid_to'))
+                 ->where([
+                     ['status', '=', 1],
+                 ])
+                 ->get();
+ 
+             return view('receptionist.printPaidPayment', compact('checkOutInfos'))->with(
+                 [
+                     'msg' => 0,
+                     'cmt' => 'init'
+                 ]
+             );
+         }
+         else {
+             session()->flush();
+             return redirect('/');
+         }
+     }
+ 
+ 
+     // end
+     //start
+     public function resReportCurrentBookingDurationSearch(){
+        if (session()->has('user_id')) {
+            $to = session('search_date_report_check_from');
+            $from = session('search_date_report_check_to');
+            $bookingInfos = BookingInfo::
+            whereDate('to_date', '>=', $to)
+                ->whereDate('from_date', '<=', $from)
+                ->where([
+                    ['check_out_status', '=', 0],
+                ])
+                ->get();
+            
+
+            return view('receptionist.reportCurrentBookings', compact('bookingInfos'))->with(
+                [
+                    'msg' => 1,
+                    'cmt' => 'init'
+                ]
+            );
+        }
+        else {
+            session()->flush();
+            return redirect('/');
+        }
+    }
+
+    public function resReportCurrentBookingDurationSearchP(Request $request)
+    {
+        //rep2
+        if (session()->has('user_id')) {
+            $fromDate = $request->input('from_date');
+            $toDate = $request->input('to_date');
+            $bType = $request->input('radio-inline');
+
+            if (session()->has('search_date_report_check_from')) {
+                session()->put('search_date_report_check_from', $fromDate);
+                session()->put('search_date_report_check_to', $toDate);
+                session()->put('search_booking_type', $bType);
+            } else {
+                session(['search_date_report_check_from' => $fromDate]);
+                session(['search_date_report_check_to' => $toDate]);
+                session(['search_booking_type' => $bType]);
+            }
+
+            return redirect('receptionist/res_report_current_booking_search_duration');
+        }
+        else {
+            session()->flush();
+            return redirect('/');
+        }
+    }
+
+    public function resReportCurrentBooking()
+    {
+        if (session()->has('user_id')) {
+            // $checkOutInfos = CheckOutPayment::
+            // where([
+            //         ['is_remove', '=', 0],
+            //         ['check_out_status', '=', 0]
+            //     ])
+            //     ->get();
+            $bookingInfos=null;
+
+            // dd($checkOutInfos);
+
+            return view('receptionist.reportCurrentBookings', compact('bookingInfos'))->with(
+                [
+                    'msg' => 0,
+                    'cmt' => 'init'
+                ]
+            );
+        }
+        else {
+            session()->flush();
+            return redirect('/');
+        }
+    }
+
+    public function resReportCheckOut()
+    {
+        if (session()->has('user_id')) {
+            // $checkOutInfos = CheckOutPayment::
+            // where([
+            //         ['is_remove', '=', 0],
+            //         ['status', '=', 1],
+            //         ['check_out_status', '=', 1]
+            //     ])
+            //     ->get();
+            $checkOutInfos=null;
+            
+
+
+            return view('receptionist.reportCheckOuts', compact('checkOutInfos'))->with(
+                [
+                    'msg' => 0,
+                    'cmt' => 'init'
+                ]
+            );
+        }
+        else {
+            session()->flush();
+            return redirect('/');
+        }
+    }
+
+    public function resReportCheckDurationSearchP(Request $request)
+    {
+        //rep1
+        if (session()->has('user_id')) {
+            $fromDate = $request->input('from_date');
+            $toDate = $request->input('to_date');
+            $bType = $request->input('radio-inline');
+            // dd($bType);
+            if (session()->has('search_date_report_check_from')) {
+                session()->put('search_date_report_check_from', $fromDate);
+                session()->put('search_date_report_check_to', $toDate);
+                session()->put('search_booking_type', $bType);
+
+            } else {
+                session(['search_date_report_check_from' => $fromDate]);
+                session(['search_date_report_check_to' => $toDate]);
+                session(['search_booking_type' => $bType]);
+
+
+            }
+
+            // dd($bType);
+
+            return redirect('receptionist/res_report_check_search_duration');
+        }
+        else {
+            session()->flush();
+            return redirect('/');
+        }
+    }
+
+    public function resReportCheckDurationSearch()
+    {
+        //rep11
+      //  dd(session('search_booking_type'));
+        if (session()->has('user_id')) {
+            if (session('search_booking_type') == 4) {
+                $checkOutInfos = CheckOutPayment::
+                whereDate('update_date', '>=', session('search_date_report_check_from'))
+                    ->whereDate('update_date', '<=', session('search_date_report_check_to'))
+                    ->where([
+                        ['status', '=', 1],
+                        ['check_out_status', '=', 1]
+                    ])
+                    ->get();
+            } else {
+
+                $checkOutInfos = CheckOutPayment::
+                whereDate('update_date', '>=', session('search_date_report_check_from'))
+                    ->whereDate('update_date', '<=', session('search_date_report_check_to'))
+                    ->where([
+                        ['status', '=', 1],
+                        ['check_out_status', '=', 1],
+                        ['booking_type', '=', session('search_booking_type')]
+                    ])
+                    ->get();
+
+            }
+
+            return view('receptionist.reportCheckOuts', compact('checkOutInfos'))->with(
+                [
+                    'msg' => 1,
+                    'cmt' => 'init'
+                ]
+            );
+        }
+        else {
+            session()->flush();
+            return redirect('/');
+        }
+    }
+
+    public function resReportCheckRooms()
+    {
+        //rep3
+        if (session()->has('user_id')) {
+
+            // $bookingInfos = BookingInfo::
+            // where([
+            //         ['check_out_status', '=', 1],
+            //     ])
+            //     ->get();
+            $bookingInfos=null;
+            return view('receptionist.reportCheckOutBooking', compact('bookingInfos'))->with(
+                [
+                    'msg' => 0,
+                    'cmt' => 'init'
+                ]
+            );
+        }
+        else {
+            session()->flush();
+            return redirect('/');
+        }
+    }
+
+    public function resReportCheckRoomsDurationSearchP(Request $request)
+    {
+        //rep1
+        if (session()->has('user_id')) {
+            $fromDate = $request->input('from_date');
+            $toDate = $request->input('to_date');
+            $bType = $request->input('radio-inline');
+            if (session()->has('search_date_report_check_from')) {
+                session()->put('search_date_report_check_from', $fromDate);
+                session()->put('search_date_report_check_to', $toDate);
+                session()->put('search_booking_type', $bType);
+
+            } else {
+                session(['search_date_report_check_from' => $fromDate]);
+                session(['search_date_report_check_to' => $toDate]);
+                session(['search_booking_type' => $bType]);
+
+
+            }
+
+
+            return redirect('receptionist/res_report_check_rooms_search_duration');
+        }
+        else {
+            session()->flush();
+            return redirect('/');
+        }
+    }
+
+    public function resReportCheckRoomsDurationSearch()
+    {
+        //rep31
+       //   dd(session('search_date_report_check_from'));
+        //dd(session('search_booking_type'));
+        if (session()->has('user_id')) {
+
+
+            if (session('search_booking_type') == 4) {
+                $bookingInfos = BookingInfo::
+                whereDate('to_date', '>=', session('search_date_report_check_from'))
+                    ->whereDate('from_date', '<=', session('search_date_report_check_to'))
+                    ->where([
+                        ['check_out_status', '=', 1]
+                    ])
+                    ->get();
+
+
+            } else {
+                $bookingInfos = BookingInfo::
+                whereDate('to_date', '>=', session('search_date_report_check_from'))
+                    ->whereDate('from_date', '<=', session('search_date_report_check_to'))
+                    ->where([
+                        ['check_out_status', '=', 1],
+                        ['booking_type', '=', session('search_booking_type')]
+
+                    ])
+                    ->get();
+
+
+            }
+
+
+            return view('receptionist.reportCheckOutBooking', compact('bookingInfos'))->with(
+                [
+                    'msg' => 1,
+                    'cmt' => 'init'
+                ]
+            );
+        }
+        else {
+            session()->flush();
+            return redirect('/');
+        }
+    }
+     //end
     public function indexHome()
     {
         if (session()->has('user_id')) {
@@ -5286,6 +5706,7 @@ class ReceptionistController extends Controller
             whereDate('add_date', '=', session('search_date_paid_from'))
                 ->where([
                     ['status', '=', 1],
+                    ['check_out_status','=',0]
                 ])
                 ->get();
 
